@@ -1,0 +1,27 @@
+site_name: CV
+
+markdown_extensions:
+  - pymdownx.tasklist # Lista de tarefas
+  - pymdownx.emoji # Emojis
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: purple
+      toggle:
+        icon: material/weather-night
+        name: ta de noite
+    - scheme: default
+      primary: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: ta de dia
